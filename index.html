@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Мультфильмы на заказ | Love Story, семейные истории и Рыжик</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth} body{margin:0}
+a{color:inherit;text-decoration:none}
+a:hover{color:#FFC53D}
+a:focus-visible,summary:focus-visible{outline:2px solid #FFC53D;outline-offset:3px}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+.chev{transition:transform .2s}
+details[open] .chev{transform:rotate(180deg)}
+</style>
+
+<div id="top" style="width:100%;box-sizing:border-box;background:#0F1226;color:#F4F3FF;font-family:'Manrope',system-ui,sans-serif;line-height:1.6;overflow-x:hidden">
+
+<!-- NAV -->
+<header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;max-width:1200px;margin:0 auto;padding:24px clamp(16px,5vw,48px);box-sizing:border-box">
+<a href="#top" style="display:flex;align-items:center;gap:12px;color:#F4F3FF;font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;min-height:44px">
+<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="18" fill="#FFC53D"></circle><path d="M14 11 L26 18 L14 25 Z" fill="#12142B"></path></svg>
+<span style="display:flex;flex-direction:column;line-height:1.2"><span style="display:flex;align-items:center;gap:8px">Мультфильмы о любви<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C12 21 3 14.5 3 8.5A4.5 4.5 0 0 1 12 6.5A4.5 4.5 0 0 1 21 8.5C21 14.5 12 21 12 21Z" fill="#FFC53D"></path></svg></span><span style="font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#B4B6D6">ИИ-анимация</span></span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:16px;font-weight:500">
+<a href="#services" style="display:inline-block;padding:10px 0">Услуги</a>
+<a href="#process" style="display:inline-block;padding:10px 0">Как это работает</a>
+<a href="#portfolio" style="display:inline-block;padding:10px 0">Работы</a>
+<a href="#pricing" style="display:inline-block;padding:10px 0">Цены</a>
+<a href="#faq" style="display:inline-block;padding:10px 0">Вопросы</a>
+<a href="#contact" style="display:inline-block;padding:12px 22px;border-radius:999px;background:#FFC53D;color:#12142B;font-weight:700">Заказать</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section style="max-width:1200px;margin:0 auto;padding:48px clamp(16px,5vw,48px) 96px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:28px;align-items:flex-start">
+<div style="font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FFC53D">Анимация с помощью ИИ — под заказ</div>
+<h1 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(34px,5vw,64px);line-height:1.1">Ваша история — в виде мультфильма</h1>
+<p style="margin:0;font-size:20px;color:#B4B6D6;max-width:560px">Создаю анимированные ролики, сказки и персонажей: от идеи и сценария до готового видео с озвучкой и музыкой.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a href="#contact" style="display:inline-block;padding:18px 32px;border-radius:999px;background:#FFC53D;color:#12142B;font-weight:700;font-size:18px">Заказать мультфильм</a>
+<a href="#portfolio" style="display:inline-block;padding:16px 30px;border-radius:999px;border:2px solid #2B2F5C;color:#F4F3FF;font-weight:700;font-size:18px">Смотреть работы</a>
+</div>
+</div>
+<div style="flex:1 1 380px;min-width:0">
+<svg viewBox="0 0 520 440" style="width:100%;height:auto;display:block" role="img" aria-label="Иллюстрация: кадр мультфильма с весёлым персонажем и кнопкой воспроизведения">
+<rect x="10" y="10" width="500" height="420" rx="28" fill="#191C3A" stroke="#2B2F5C" stroke-width="2"></rect>
+<rect x="36" y="36" width="448" height="300" rx="16" fill="#262A6B"></rect>
+<circle cx="400" cy="100" r="34" fill="#FFC53D"></circle>
+<path d="M36 300 C 120 230, 200 250, 270 285 C 340 320, 420 250, 484 280 L484 320 Q484 336 468 336 L52 336 Q36 336 36 320 Z" fill="#3B3F9E"></path>
+<path d="M110 70 L116 84 L130 90 L116 96 L110 110 L104 96 L90 90 L104 84 Z" fill="#F4F3FF"></path>
+<path d="M330 55 L334 65 L344 69 L334 73 L330 83 L326 73 L316 69 L326 65 Z" fill="#F4F3FF"></path>
+<circle cx="168" cy="150" r="18" fill="#8B7CFF"></circle>
+<circle cx="272" cy="150" r="18" fill="#8B7CFF"></circle>
+<circle cx="168" cy="150" r="8" fill="#C9C2FF"></circle>
+<circle cx="272" cy="150" r="8" fill="#C9C2FF"></circle>
+<circle cx="220" cy="210" r="70" fill="#8B7CFF"></circle>
+<circle cx="195" cy="200" r="16" fill="#FFFFFF"></circle>
+<circle cx="245" cy="200" r="16" fill="#FFFFFF"></circle>
+<circle cx="199" cy="202" r="7" fill="#12142B"></circle>
+<circle cx="249" cy="202" r="7" fill="#12142B"></circle>
+<path d="M190 238 Q220 266 250 238" stroke="#12142B" stroke-width="6" fill="none" stroke-linecap="round"></path>
+<circle cx="80" cy="383" r="26" fill="#FFC53D"></circle>
+<path d="M72 370 L96 383 L72 396 Z" fill="#12142B"></path>
+<rect x="126" y="378" width="330" height="10" rx="5" fill="#2B2F5C"></rect>
+<rect x="126" y="378" width="190" height="10" rx="5" fill="#FFC53D"></rect>
+</svg>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:#14173A">
+<div style="max-width:1200px;margin:0 auto;padding:96px clamp(16px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:680px">
+<h2 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15">Что я создаю</h2>
+<p style="margin:0;font-size:18px;color:#B4B6D6">Выберите формат или расскажите свою идею — подберём подходящее решение.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div style="flex:1 1 260px;min-width:0;box-sizing:border-box;padding:32px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:16px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B7CFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"></path></svg>
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:20px;line-height:1.3">Короткий мультфильм</h3>
+<p style="margin:0;color:#B4B6D6">История с сюжетом, героями, озвучкой и музыкой. Для YouTube, соцсетей и фестивалей.</p>
+</div>
+<div style="flex:1 1 260px;min-width:0;box-sizing:border-box;padding:32px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:16px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B7CFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"></path></svg>
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:20px;line-height:1.3">Рекламный ролик</h3>
+<p style="margin:0;color:#B4B6D6">Анимированное видео о вашем продукте или бренде: объясняющие ролики и реклама для соцсетей.</p>
+</div>
+<div style="flex:1 1 260px;min-width:0;box-sizing:border-box;padding:32px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:16px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B7CFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:20px;line-height:1.3">Персонаж и маскот</h3>
+<p style="margin:0;color:#B4B6D6">Уникальный герой для вашего бренда, канала или проекта — с характером, образом и анимацией.</p>
+</div>
+<div style="flex:1 1 260px;min-width:0;box-sizing:border-box;padding:32px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:16px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B7CFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"></rect><path d="M12 8v13M3 13h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zM12 8c2-4 6-4 6-1.5S14 8 12 8z"></path></svg>
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:20px;line-height:1.3">Мультфильм в подарок</h3>
+<p style="margin:0;color:#B4B6D6">Персональная сказка с героями из вашей семьи — на день рождения, праздник или просто так.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="max-width:1200px;margin:0 auto;padding:96px clamp(16px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<h2 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15">Как проходит работа</h2>
+<div style="display:flex;flex-wrap:wrap;gap:32px">
+<div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:48px;line-height:1;color:#FFC53D">01</div>
+<h3 style="margin:0;font-size:20px;font-weight:700">Бриф и идея</h3>
+<p style="margin:0;color:#B4B6D6">Вы рассказываете о задаче, аудитории и пожеланиях. Я предлагаю концепцию и называю стоимость.</p>
+</div>
+<div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:48px;line-height:1;color:#FFC53D">02</div>
+<h3 style="margin:0;font-size:20px;font-weight:700">Сценарий и раскадровка</h3>
+<p style="margin:0;color:#B4B6D6">Пишу сценарий и собираю раскадровку, чтобы вы заранее увидели, как будет выглядеть мультфильм.</p>
+</div>
+<div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:48px;line-height:1;color:#FFC53D">03</div>
+<h3 style="margin:0;font-size:20px;font-weight:700">Создание и анимация</h3>
+<p style="margin:0;color:#B4B6D6">Делаю героев, сцены и анимацию, добавляю озвучку, музыку и звуковые эффекты.</p>
+</div>
+<div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:48px;line-height:1;color:#FFC53D">04</div>
+<h3 style="margin:0;font-size:20px;font-weight:700">Правки и сдача</h3>
+<p style="margin:0;color:#B4B6D6">Вносим правки по вашим комментариям и передаю готовый файл в нужном формате.</p>
+</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="max-width:1200px;margin:0 auto;padding:80px clamp(16px,5vw,48px);box-sizing:border-box">
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px">
+    <div>
+      <div style="font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FFC53D">Портфолио</div>
+      <h2 style="margin:12px 0 0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15">Мои работы</h2>
+    </div>
+    <p style="margin:0;color:#B4B6D6;font-size:18px;max-width:520px">Романтические истории, семейные мультфильмы и добрые приключения Рыжика. Ниже — пример готовой работы.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+    <article style="padding:20px;border:1px solid #2B2F5C;border-radius:24px;background:#191C3A">
+      <div style="position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#262A6B">
+        <iframe src="https://drive.google.com/file/d/13w31UMaPjoDOx8AgNhx32fOFF3fhCSGR/preview" title="Пример мультфильма" loading="lazy" allow="autoplay" style="width:100%;height:100%;border:0;position:absolute;inset:0" allowfullscreen></iframe>
+      </div>
+      <div style="margin-top:18px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#FFC53D;font-weight:700">Пример работы</div>
+      <h3 style="margin:8px 0;font-family:'Unbounded',sans-serif;font-size:21px">Мультфильм на заказ</h3>
+      <p style="margin:0;color:#B4B6D6;font-size:16px">Посмотрите пример готового видео. Хотите мультфильм по своей истории? Напишите мне — обсудим идею.</p>
+      <a href="https://drive.google.com/file/d/13w31UMaPjoDOx8AgNhx32fOFF3fhCSGR/view?usp=sharing" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;color:#FFC53D;font-weight:700;text-decoration:underline">Открыть видео отдельно ↗</a>
+    </article>
+    <article style="padding:24px;border:1px solid #2B2F5C;border-radius:24px;background:#191C3A">
+      <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#FFC53D;font-weight:700">Love Story</div>
+      <h3 style="margin:10px 0;font-family:'Unbounded',sans-serif;font-size:21px">Романтические мультфильмы</h3>
+      <p style="margin:0;color:#B4B6D6;font-size:16px">История знакомства, признания или свадьбы — в виде тёплого мультфильма, созданного специально для вас.</p>
+    </article>
+    <article style="padding:24px;border:1px solid #2B2F5C;border-radius:24px;background:#191C3A">
+      <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#FFC53D;font-weight:700">Семейные истории</div>
+      <h3 style="margin:10px 0;font-family:'Unbounded',sans-serif;font-size:21px">Мультфильмы о семье</h3>
+      <p style="margin:0;color:#B4B6D6;font-size:16px">Воспоминания, важные события и семейные истории, превращённые в мультфильм на память.</p>
+    </article>
+    <article style="padding:24px;border:1px solid #2B2F5C;border-radius:24px;background:#191C3A">
+      <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#FFC53D;font-weight:700">Рыжик</div>
+      <h3 style="margin:10px 0;font-family:'Unbounded',sans-serif;font-size:21px">Детские мультфильмы</h3>
+      <p style="margin:0;color:#B4B6D6;font-size:16px">Добрые приключения Рыжика — истории с юмором, дружбой и маленькими открытиями.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="max-width:1200px;margin:0 auto;padding:96px clamp(16px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:680px">
+<h2 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15">Стоимость</h2>
+<p style="margin:0;font-size:18px;color:#B4B6D6">Точная цена зависит от длительности и сложности. Напишите, и я рассчитаю стоимость вашего проекта.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px;align-items:stretch">
+<div style="flex:1 1 280px;min-width:0;box-sizing:border-box;padding:36px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:22px">Мини</h3>
+<div style="color:#B4B6D6">Ролик до [N] секунд</div>
+</div>
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:36px">[ЦЕНА]</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;flex-grow:1;color:#B4B6D6">
+<li>Сценарий и раскадровка</li>
+<li>Анимация и музыка</li>
+<li>[N] раунда правок</li>
+<li>Срок: [N] дней</li>
+</ul>
+<a href="#contact" style="display:block;text-align:center;padding:16px 24px;border-radius:999px;border:2px solid #2B2F5C;font-weight:700;color:#F4F3FF">Выбрать</a>
+</div>
+<div style="flex:1 1 280px;min-width:0;box-sizing:border-box;padding:36px;border-radius:24px;background:#191C3A;border:2px solid #FFC53D;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:22px">Стандарт</h3>
+<div style="color:#B4B6D6">Мультфильм до 2 минут</div>
+</div>
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:36px">50 BYN</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;flex-grow:1;color:#B4B6D6">
+<li>Сценарий и раскадровка</li>
+<li>Персонажи и озвучка</li>
+<li>Музыка и звуковые эффекты</li>
+<li>[N] раунда правок</li>
+<li>Срок: [N] дней</li>
+</ul>
+<a href="#contact" style="display:block;text-align:center;padding:16px 24px;border-radius:999px;background:#FFC53D;font-weight:700;color:#12142B">Выбрать</a>
+</div>
+<div style="flex:1 1 280px;min-width:0;box-sizing:border-box;padding:36px;border-radius:24px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:500;font-size:22px">Под ключ</h3>
+<div style="color:#B4B6D6">Серия или большой проект</div>
+</div>
+<div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:36px">[ЦЕНА]</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;flex-grow:1;color:#B4B6D6">
+<li>Всё из тарифа «Стандарт»</li>
+<li>Разработка персонажа и стиля</li>
+<li>Несколько серий или версий</li>
+<li>Срок: по договорённости</li>
+</ul>
+<a href="#contact" style="display:block;text-align:center;padding:16px 24px;border-radius:999px;border:2px solid #2B2F5C;font-weight:700;color:#F4F3FF">Обсудить</a>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:#14173A">
+<div style="max-width:880px;margin:0 auto;padding:96px clamp(16px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<h2 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15">Частые вопросы</h2>
+<div style="display:flex;flex-direction:column;border-top:1px solid #2B2F5C">
+<details style="border-bottom:1px solid #2B2F5C">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;min-height:44px;font-size:20px;font-weight:700">
+<span>Сколько времени занимает работа?</span>
+<svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</summary>
+<p style="margin:0 0 24px;color:#B4B6D6;font-size:18px">Срок зависит от длительности и сложности. Точные сроки назову после брифа. Срок зависит от длительности и сложности проекта. До начала работы я согласую с вами ориентировочные сроки.</p>
+</details>
+<details style="border-bottom:1px solid #2B2F5C">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;min-height:44px;font-size:20px;font-weight:700">
+<span>Что мне нужно подготовить?</span>
+<svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</summary>
+<p style="margin:0 0 24px;color:#B4B6D6;font-size:18px">Достаточно идеи и пары слов о том, для чего нужен ролик. Если есть эскизы, фото или примеры стиля, пришлите их, это ускорит работу.</p>
+</details>
+<details style="border-bottom:1px solid #2B2F5C">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;min-height:44px;font-size:20px;font-weight:700">
+<span>Кому принадлежат права на мультфильм?</span>
+<svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</summary>
+<p style="margin:0 0 24px;color:#B4B6D6;font-size:18px">Условия использования готового мультфильма и передачи прав обсуждаем заранее и фиксируем до начала работы.</p>
+</details>
+<details style="border-bottom:1px solid #2B2F5C">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;min-height:44px;font-size:20px;font-weight:700">
+<span>Как проходит оплата?</span>
+<svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</summary>
+<p style="margin:0 0 24px;color:#B4B6D6;font-size:18px">Порядок и этапы оплаты согласуем индивидуально до начала работы.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width:1200px;margin:0 auto;padding:96px clamp(16px,5vw,48px);box-sizing:border-box">
+<div style="box-sizing:border-box;padding:clamp(32px,6vw,72px);border-radius:32px;background:#191C3A;border:1px solid #2B2F5C;display:flex;flex-direction:column;align-items:flex-start;gap:28px">
+<h2 style="margin:0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.15;max-width:720px">Расскажите о вашей идее</h2>
+<p style="margin:0;font-size:20px;color:#B4B6D6;max-width:640px">Опишите в паре предложений, какой мультфильм вы хотите. Я отвечу и предложу формат и стоимость.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a href="https://t.me/Amyo_o" target="_blank" rel="noopener" style="display:inline-block;padding:18px 32px;border-radius:999px;background:#FFC53D;color:#12142B;font-weight:700;font-size:18px">Написать в Telegram</a>
+<a href="https://www.instagram.com/it_good_cup/" target="_blank" rel="noopener" style="display:inline-block;padding:16px 30px;border-radius:999px;border:2px solid #2B2F5C;color:#F4F3FF;font-weight:700;font-size:18px">Instagram</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="max-width:1200px;margin:0 auto;padding:32px clamp(16px,5vw,48px) 48px;box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;color:#B4B6D6;font-size:15px;border-top:1px solid #2B2F5C">
+<div>© 2026 Мультфильмы о любви | ИИ-анимация</div>
+<div>Мультфильмы с помощью ИИ на заказ</div>
+</footer>
+
+</div>
+
+
+</body>
+</html>
